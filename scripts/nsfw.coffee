@@ -6,7 +6,7 @@
 #   hubot jiggle me <query> - The same thing as `nsfw me`, except adds a few parameters to try to return an jiggly GIF instead.
 
 module.exports = (robot) ->
-  robot.respond /(image|img)( me)? (.*)/i, (msg) ->
+  robot.respond /(nsfw|img)( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[3], (url) ->
       msg.send url
 
