@@ -12,7 +12,7 @@ module.exports = (robot) ->
 
 
 
-makeUrl = ->
+makeUrl = (msg) ->
   string = ""
   possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
   i = 0
